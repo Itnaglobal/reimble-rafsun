@@ -1,381 +1,320 @@
-/* mandatory section  */
-
-:root {
-    /* Colors */
-    --bg-light: #f0f2f5;
-    --bg-dark: #18191a;
-    --highlight-gray: #e4e6e8;
-    --white-primary: #fff;
-    --dark-primary: #333;
-    --dark-gray: #65676b;
-    --less-dark-gray: #606770;
-    --gray-border: #ced0d4;
-    --primary-color: #426bb1;
-    --less-primary-color: #d7e4f2;
-    --blue-primary: #0d6efd;
-    --green-primary: #198754;
-    --danger-primary: #dc3545;
-}
-
-
-/* font  link*/
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
-body {
-    background-color: var( --bg-light);
-    /* overflow-x: hidden; */
-    font-family: 'Raleway', sans-serif;
-}
-
-
-/* main section  */
-
-.main {
-    display: grid;
-    grid-template-columns: [first] 26% [line2] auto [end];
-}
-
-.Create-invites {
-    margin-bottom: 1rem;
-}
-
-.Create-side {
-    background-color: var(--white-primary);
-    box-shadow: 0 3px 5px 0 rgb(0 0 0 / 20%), 0 0px 4px 0 rgb(0 0 0 / 19%);
-    height: 100%;
-    padding: 15px;
-}
-
-.iconify {
-    width: 2rem;
-}
-
-.Create-start {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.Create-pages {
-    display: flex;
-    column-gap: 1rem;
-    margin-top: 1rem;
-}
-
-.Create-Create-pages-icon {
-    background-color: var(--blue-primary);
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    color: white;
-}
-
-.Create-ptofile {
-    margin-left: 1rem;
-    margin-top: 1rem;
-}
-
-.profile-pic {
-    width: 6%;
-}
-
-.Create-Crate-button {
-    display: flex;
-    align-items: center;
-    background-color: var(--white-primary);
-    height: 50px;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 3px 5px 0 rgb(0 0 0 / 20%), 0 0px 4px 0 rgb(0 0 0 / 19%);
-    margin-top: 1rem;
-}
-
-.btn-create {
-    background-color: rgba(191, 248, 248, 0.383);
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    font-weight: 500;
-    color: var(--blue-primary);
-}
-
-.Create-modify-icon {
-    background-color: var(--highlight-gray);
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-}
-
-.active {
-    bottom: 12rem;
-    right: 92%;
-    position: absolute;
-}
-
-.active p {
-    font-size: 12px;
-    font-weight: 500;
-}
-
-
-/* middle section create pages  */
-
-.Create-middle-section {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.middle-Create {
-    margin-top: 2rem;
-}
-
-
-/* Group   Create pages  */
-
-.GroupCreate {
-    box-shadow: 0 3px 5px 0 rgb(0 0 0 / 20%), 0 0px 4px 0 rgb(0 0 0 / 19%);
-    height: 100vh;
-    border-radius: 8px;
-}
-
-.GroupPages {
-    display: flex;
-    gap: 1rem;
-    padding-block-start: 1rem;
-    margin-left: 1rem;
-}
-
-.GroupCreate hr {
-    margin: 0;
-}
-
-.GroupPages>button {
-    border: none;
-    background-color: white;
-    font-weight: 500;
-}
-
-
-/* modal  */
-
-.modal-form {
-    margin-top: 8rem !important;
-}
-
-.modal-design {
-    height: 100vh !important;
-    border-radius: 10px !important;
-}
-
-.CreateButton {
-    width: 100px;
-    height: 35px;
-    border: none;
-    border-radius: 20px;
-    background-color: var(--gray-border);
-}
-
-.updateCover {
-    position: absolute;
-    top: 17px;
-    right: 12px;
-}
-
-@media screen and (min-width: 576px) {
-    .modal-form {
-        max-width: 48rem !important;
+    /* mandatory section  */
+    
+     :root {
+        /* Colors */
+        --bg-light: #f0f2f5;
+        --bg-dark: #18191a;
+        --highlight-gray: #e4e6e8;
+        --white-primary: #fff;
+        --dark-primary: #333;
+        --dark-gray: #65676b;
+        --less-dark-gray: #606770;
+        --gray-border: #ced0d4;
+        --primary-color: #426bb1;
+        --less-primary-color: #d7e4f2;
+        --blue-primary: #0d6efd;
+        --green-primary: #198754;
+        --danger-primary: #dc3545;
+        --first-color: #1A73E8;
+        --input-color: #80868B;
+        --border-color: #DADCE0;
+        --normal-font-size: 1rem;
+        --small-font-size: .75rem;
     }
-}
-
-
-/* middle section  */
-
-
-/* .Create-middle-section{
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.middle-Create{
-  margin-top: 2rem;
-}
-
-.Create-mobile-bar{
-  display: flex;
-  column-gap: 2rem;
-}
-.mobile-bar-Create-pages{
-  display: flex;
-  align-items: center;
-  column-gap: .3rem;
-  margin-top: 1rem;
-
-    border: 1px solid darkgray;
-    padding: 5px;
-    border-radius: 30px;
-    width: 143px;
-  
-    background: linear-gradient(to left, #fff 50% ,#65a2df 50%) right;
-    background-size: 200%;
-    transition: all 0.3s ease-in-out;
-}
-
-.mobile-bar-Create-pages:hover{
-   background-position: left;
-}
-
-.mobile-bar-Create-pages:hover strong {
-  color: #fff;
-} */
-
-
-/* midea query  */
-
-@media screen and (max-width: 991px) {
+    /* font  link*/
+    
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+    body {
+        background-color: var( --bg-light);
+        /* overflow-x: hidden; */
+        font-family: 'Raleway', sans-serif;
+    }
+    /* main section  */
+    
     .main {
         display: grid;
-        grid-template-columns: [first] 0% [line2] auto [end];
+        grid-template-columns: [first] 26% [line2] auto [end];
     }
-    .Create-side {
-        visibility: hidden;
-        display: none;
-    }
+    
     .Create-invites {
         margin-bottom: 1rem;
+    }
+    
+    .Create-side {
+        background-color: var(--white-primary);
+        box-shadow: 0 3px 5px 0 rgb(0 0 0 / 20%), 0 0px 4px 0 rgb(0 0 0 / 19%);
+        height: 100%;
+        padding: 15px;
+    }
+    
+    .iconify {
+        width: 2rem;
+    }
+    
+    .Yourpages-start {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .Create-pages {
+        display: flex;
+        column-gap: 1rem;
         margin-top: 1rem;
     }
-}
-
-@media screen and (max-width:990px) {
-    /* .middle-section {
-    width: 90%;
-  } */
-    .Create-mobile-bar {
-        margin-top: -2rem;
-    }
+    
     .Create-Create-pages-icon {
         background-color: var(--blue-primary);
-        width: 20px;
-        height: 20px;
+        width: 35px;
+        height: 35px;
         border-radius: 50%;
         color: white;
     }
-    .Create-Create-pages-icon-mobile {
-        width: 20px;
-        height: 20px;
+    
+    .Create-ptofile {
+        margin-left: 1rem;
+        margin-top: 1rem;
     }
-}
-
-@media screen and (min-width: 990px) {
-    .Create-mobile-bar {
-        visibility: hidden;
-        display: none;
-        margin-top: -2rem;
+    
+    .profile-pic {
+        width: 6%;
     }
-}
-
-@media screen and (max-width:990px) {
-    .Create-middle-section {
-        width: 95%;
-        /* margin-left: 1rem; */
+    
+    .Create-Crate-button {
+        display: flex;
+        align-items: center;
+        background-color: var(--white-primary);
+        height: 50px;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 3px 5px 0 rgb(0 0 0 / 20%), 0 0px 4px 0 rgb(0 0 0 / 19%);
+        margin-top: 1rem;
     }
-}
-
-@media screen and (max-width: 767px) {
-    .main {
-        grid-template-columns: 100%;
-    }
-    .Create-mobile-bar {
-        column-gap: 1rem;
-        margin-top: -2rem;
-        font-size: .7rem;
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .Create-mobile-bar {
-        column-gap: 1rem;
-        margin-top: -2rem;
-    }
-    .Create-mobile-bar {
-        column-gap: 1rem;
-        margin-top: -2rem;
-        font-size: .7rem;
+    
+    .btn-create {
+        background-color: rgba(191, 248, 248, 0.383);
         width: 100%;
+        border: none;
+        border-radius: 5px;
+        font-weight: 500;
+        color: var(--blue-primary);
     }
+    
+    .Create-modify-icon {
+        background-color: var(--highlight-gray);
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+    }
+    
+    .active {
+        bottom: 12rem;
+        right: 92%;
+        position: absolute;
+    }
+    
+    .active p {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    /* middle section create pages  */
+    
     .Create-middle-section {
-        width: 95%;
-        /* margin-left: 1rem; */
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
-}
-
-@media screen and (max-width: 499px) {
-    .Create-mobile-bar {
-        column-gap: 1rem;
-        margin-top: -2rem;
-        font-size: .7rem;
-        width: 100%;
-        overflow-x: auto;
+    
+    .middle-Create {
+        margin-top: 2rem;
     }
-    .Create-middle-section {
-        width: 95%;
-        /* margin-left: 1rem; */
+    /* Group   Create pages  */
+    
+    .GroupCreate {
+        box-shadow: 0 3px 5px 0 rgb(0 0 0 / 20%), 0 0px 4px 0 rgb(0 0 0 / 19%);
+        height: 100vh;
+        border-radius: 8px;
     }
-}
-
-@media screen and (max-width: 476px) {
-    .Create-middle-section {
-        width: 95%;
+    
+    .GroupPages {
+        display: flex;
+        gap: 1rem;
+        padding-block-start: 1rem;
         margin-left: 1rem;
     }
-}
-
-@media screen and (max-width: 768px) {
-    .like-card-memes {
-        width: 10rem !important;
+    
+    .Pagesgroup {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+    
+    .create-btn {
+        border: none;
+        color: var(--blue-primary);
+    }
+    
+    .GroupCreate hr {
+        margin: 0;
+    }
+    
+    .GroupPages>button {
+        border: none;
+        background-color: white;
+        font-weight: 500;
+    }
+    /* modal  */
+    
+    .modal-form {
+        margin-top: 8rem !important;
+    }
+    
+    .modal-design {
         border-radius: 10px !important;
     }
-    .like-meme-card img {
-        width: 159px;
-        height: 90px;
-        border-radius: 10px 10px 0px 0px;
+    
+    .CreateButton {
+        width: 100px;
+        height: 35px;
+        border: none;
+        border-radius: 20px;
+        background-color: var(--gray-border);
     }
-    .like-meme-name h6 {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        width: 6rem;
-        font-size: 13px;
+    /* .groupForm {
+    position: relative;
+} */
+    
+    .coverImage {
+        position: relative;
+        width: 100%;
+        height: 100%;
     }
-}
-
-@media screen and (max-width: 359px) {
-    .like-meme-card {
-        display: grid;
-        flex-wrap: wrap;
-        /* flex-direction: column; */
-        column-gap: 1rem;
-        row-gap: .5rem;
-        grid-template-columns: repeat(1, 1fr);
-        margin-top: 1.5rem;
+    
+    .profile {
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
-    .like-card-memes {
-        width: 17.5rem !important;
-        border-radius: 10px !important;
-        margin-bottom: .5rem;
+    
+    .updateCover {
+        position: absolute;
+        top: 17px;
+        right: 12px;
     }
-    .like-meme-card img {
-        width: 17.4rem;
-        height: 156px;
-        border-radius: 10px 10px 0px 0px;
+    
+    .propic {
+        width: 100px;
     }
-    .like-meme-name h6 {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        width: 6rem;
-        font-size: 13px;
+    
+    .updateprofile {
+        position: absolute;
+        left: 4.5rem;
+        top: 0;
     }
-}
+    /* input dropdown  */
+    /* .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+    
+    .input_box select {
+        word-wrap: normal;
+        width: 100%;
+        height: 48px;
+        border-radius: 5px;
+        outline: none;
+        margin-right: 1rem;
+        border-radius: .5rem;
+        border: 1px solid var(--border-color);
+        font-size: var(--normal-font-size);
+        padding: 0rem 1rem;
+        opacity: .65;
+    }
+    /* input form  */
+    
+    .input_box {
+        position: relative;
+        height: 48px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .input_item {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: none;
+        z-index: 1;
+        outline: none;
+        padding: 1rem;
+        border-radius: .5rem;
+        border: 1px solid var(--border-color);
+        font-size: var(--normal-font-size);
+    }
+    
+    .form_lebel {
+        position: absolute;
+        padding: 0.25rem;
+        left: 1rem;
+        top: .6rem;
+        background-color: #fff;
+        transition: .3s;
+        color: var(--input-color);
+        font-size: var(--normal-font-size);
+    }
+    
+    .input_item:focus+.form_lebel {
+        top: -.8rem;
+        left: .8rem;
+        color: var(--first-color);
+        font-size: var(--small-font-size);
+        font-weight: 500;
+        z-index: 10;
+    }
+    
+    .input_item :not(:placeholder-shown).input_item :not(:focus)+.form_lebel {
+        top: -.5rem;
+        left: .8rem;
+        font-size: var(--small-font-size);
+        font-weight: 500;
+        z-index: 10;
+    }
+    
+    .input_item :focus {
+        border: 1.5px solid var(--first-color);
+    }
+    
+    .Input_form {
+        margin-top: 3rem;
+    }
+    
+    @media screen and (min-width: 576px) {
+        .modal-form {
+            max-width: 48rem !important;
+        }
+    }
+    /* middle section  */
+    
+    @media screen and (max-width: 991px) {
+        .main {
+            display: grid;
+            grid-template-columns: [first] 0% [line2] auto [end];
+        }
+        .Create-side {
+            visibility: hidden;
+            display: none;
+        }
+        .Create-invites {
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+    }
+    
+    @media screen and (min-width: 992px) {
+        .create-btn {
+            display: none;
+        }
+    }

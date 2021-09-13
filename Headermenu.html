@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Menu</title>
+
+
+    <style>
+        /* Navbar container */
+        
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            font-family: Arial;
+        }
+        /* Links inside the navbar */
+        
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /* The dropdown container */
+        
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        /* Dropdown button */
+        
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font: inherit;
+            margin: 0;
+        }
+        /* Add a red background color to navbar links on hover */
+        
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+        /* Dropdown content (hidden by default) */
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            z-index: 1;
+        }
+        /* Show the dropdown menu on hover */
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        /* Create three equal columns that floats next to each other */
+        
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+            background-color: #ccc;
+            height: 250px;
+        }
+        /* Style links inside the columns */
+        
+        .column a {
+            float: none;
+            color: black;
+            padding: 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        /* Add a background color on hover */
+        
+        .column a:hover {
+            background-color: #ddd;
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown
+            <i class="fa fa-caret-down"></i>
+          </button>
+            <div class="dropdown-content">
+
+                <div class="row">
+                    <div class="column">
+                        <h3>Category 1</h3>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <div class="column">
+                        <h3>Category 2</h3>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <div class="column">
+                        <h3>Category 3</h3>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <div class="column">
+                        <h3>Category 3</h3>
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- catagory  -->
+    <div class="Catagorybar">
+        <ul>
+            <li><a href="#">Logo Design</a></li>
+            <li><a href="#">Web Programming</a></li>
+            <li><a href="#">Voice</a></li>
+            <li>
+                <a href="#">Writing & Translation &#9662;</a>
+
+                <div class="middle">
+                    <ul class="dropdown2">
+                        <li><a href="#">Banglades</a></li>
+                        <li><a href="#">USA</a></li>
+                        <li><a href="#">Canada</a></li>
+                        <li><a href="#">Germany</a></li>
+                        <li><a href="#">italy</a></li>
+                        <li><a href="#">Spain</a></li>
+                        <li><a href="#">Russia</a></li>
+                        <li><a href="#">Norway</a></li>
+                        <li><a href="#">India</a></li>
+                        <li><a href="#">Maldivs</a></li>
+                        <li><a href="#">Singapore</a></li>
+                        <li><a href="#">london</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Programming & Tech</a></li>
+            <li><a href="#">Life Style</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">View More</a></li>
+        </ul>
+    </div>
+
+
+    <style>
+        .Catagorybar {
+            margin: 6px 0px -6px 0px;
+        }
+        
+        ul {
+            padding: 0;
+            list-style: none;
+            background: white;
+        }
+        
+        ul li {
+            display: inline-block;
+            position: relative;
+            line-height: 21px;
+            text-align: left;
+        }
+        
+        ul li a {
+            display: block;
+            padding: 8px 18px;
+            color: #333;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        ul li a:hover {
+            color: #333;
+            background: var(--bg-light);
+        }
+        /* Set width of the dropdown */
+        /* ul li ul.dropdown{
+    min-width: 100%; 
+    background: #f2f2f2;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+} */
+        
+        ul li:hover ul.dropdown {
+            display: block;
+            /* Display the dropdown */
+        }
+        
+        ul li ul.dropdown li {
+            display: block;
+        }
+        /* drop  */
+        
+        .Catagorybar>ul>li>div {
+            display: none;
+            position: absolute;
+            top: 100%;
+            /* border: 1px solid #aa2ebf; */
+            background-color: white;
+            width: 450px;
+            z-index: 999;
+            left: 0;
+        }
+        
+        .Catagorybar>ul>li:hover>div {
+            display: block;
+        }
+    </style>
+</body>
+
+</html>

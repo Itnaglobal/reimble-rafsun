@@ -12,6 +12,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- icon link  -->
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Create group</title>
 </head>
 
@@ -98,30 +100,9 @@
             <!-- middle section  -->
             <div class="Create-middle-section">
                 <div class="middle-Create">
-                    <!-- mobile bar  -->
-                    <!-- <div class="Create-mobile-bar">
-                    
-                 <div class="mobile-bar-Create-pages">
-                    <span class="iconify Create-pages-icon" data-icon="mdi:flag-variant"></span>
-                    <div>
-                        <strong style="white-space: nowrap;">Your pages</strong>
-                    </div>    
-                </div>
-                    <div class="mobile-bar-Create-pages">
-                        <span class="iconify Create-icon-mobile" data-icon="mdi:account-child-circle"></span>
-                        <div>
-                            <strong style="white-space: nowrap;">Discover</strong>
-                        </div> 
-                    </div>
-                    <div class="mobile-bar-Create-pages">
-                        <span class="iconify Create-icon-mobile" data-icon="mdi:thumb-up"></span>
-                        <div>
-                            <strong style="white-space: nowrap;">Like page</strong>
-                        </div> 
-                    </div>
-                 </div> -->
+
                     <div class="Create-invites">
-                        <h4><strong>Your like pages</strong></h4>
+                        <h4><strong>Create pages</strong></h4>
 
                     </div>
 
@@ -131,55 +112,110 @@
                     <div class=" GroupCreate">
 
                         <div class="GroupPages ">
+
                             <button class="text-muted">Your pages</button>
                             <button class="text-muted">Requested</button>
 
-                            <!-- Button trigger modal -->
-
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-form">
-                                    <div class="modal-content modal-design ">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Create new page</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="groupForm">
-                                                <div class="coverImage">
-                                                    <img src="images/pic.jpg.jpg" class="img-fluid" alt="" srcset="">
-                                                    <span class="iconify updateCover" data-icon="mdi:camera-wireless"></span>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-                                            <button type="button" class=" CreateButton">Create</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- modal end  -->
 
 
 
                         </div>
                         <hr>
 
+                        <!-- Button trigger modal -->
+
+
+                        <!-- Modal -->
+                        <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-form ">
+                                <div class="modal-content modal-design animate__bounceInDown">
+                                    <div class="modal-header  ">
+                                        <h5 class="modal-title" id="exampleModalLabel">Create new page</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="groupForm">
+                                            <div class="coverImage">
+                                                <div class="cover">
+                                                    <img src="images/pic.jpg.jpg" class="img-fluid" alt="" srcset="">
+                                                    <span class="iconify updateCover" data-icon="mdi:camera-wireless"></span>
+                                                </div>
+
+                                                <div class="profile">
+                                                    <img class="propic" src="images/pro.jpg" alt="" srcset="">
+                                                    <span class="iconify updateprofile" data-icon="mdi:camera-wireless"></span>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                        <div class="Input_form">
+
+                                            <div class="input_box">
+                                                <input class="input_item" name="text" type="text">
+                                                <label class="form_lebel" for="">Page name </label>
+                                            </div>
+
+                                            <!-- 
+                                                <div class="input_box">
+                                                    <input class="input_item" name="text" type="box">
+                                                    <label class="form_lebel" for="">Location </label>
+
+                                                </div> -->
+
+                                            <div class="input_box">
+                                                <select>
+                                                      <option>Option 1</option>
+                                                      <option>Option 2</option>
+                                                      <option>Option 3</option>
+                                                      <option>Option 4</option>
+                                                      <option>Option 5</option>
+                                                    </select>
+                                            </div>
+                                            <div class="input_box">
+
+                                                <textarea class="input_item" name="comment" form="usrform"></textarea>
+                                                <label class="form_lebel" for=""> Description</label> <br>
+                                            </div>
+
+
+
+
+                                            <!-- <div class="input_box">
+
+                                                    <textarea class="input_item" name="comment" form="usrform"></textarea>
+                                                    <label class="form_lebel" for="">Page rules</label> <br>
+                                                </div> -->
+
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                                        <button type="button" class=" CreateButton">Create</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- modal end  -->
+
+
 
                     </div>
-
-
-
-
-
-
+                    <hr>
 
 
                 </div>
+
+
+
+
+
+
+
+
+            </div>
 
 
             </div>
