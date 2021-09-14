@@ -120,6 +120,36 @@
         font-weight: 500;
     }
     /* middle section create pages  */
+    /* middle mobile bar  */
+    
+    .Yourpages-mobile-bar {
+        display: flex;
+        column-gap: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .mobile-bar-Your-pages {
+        display: flex;
+        align-items: center;
+        column-gap: .3rem;
+        margin-top: 1rem;
+        border: 1px solid darkgray;
+        padding: 5px;
+        border-radius: 30px;
+        width: 143px;
+        /* transition: ease-out 0.3s; */
+        background: linear-gradient(to left, #fff 50%, #65a2df 50%) right;
+        background-size: 200%;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .mobile-bar-Your-pages:hover {
+        background-position: left;
+    }
+    
+    .mobile-bar-Your-pages:hover strong {
+        color: #fff;
+    }
     
     .Pagesmiddle {
         margin-top: 2rem;
@@ -542,6 +572,18 @@
             flex-wrap: wrap;
             row-gap: 1rem;
         }
+        .Pagesmiddle {
+            margin-top: 1rem;
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    
+    @media screen and (min-width: 992px) {
+        .Yourpages-mobile-bar {
+            display: none;
+        }
     }
     
     @media screen and (max-width: 752px) {
@@ -586,7 +628,7 @@
             margin-left: .9rem;
         }
         .Pagesmiddle {
-            margin-top: 2rem;
+            margin-top: 1rem;
             width: 95%;
             margin-left: auto;
             margin-right: auto;
