@@ -142,7 +142,7 @@
         font-size: 12px;
         font-weight: 500;
     }
-    /* middle mobile bar  */
+    /* middle mobile view nav bar  */
     
     .Watch-mobile-bar {
         display: flex;
@@ -173,7 +173,7 @@
     .mobile-bar-Watch-pages:hover strong {
         color: #fff;
     }
-    /* middle video  section  */
+    /* middle part video  section  */
     
     .Watch-middle-section {
         width: 50%;
@@ -187,10 +187,6 @@
         border-radius: 6px;
         box-shadow: 0 3px 5px 0 rgb(0 0 0 / 20%), 0 0px 4px 0 rgb(0 0 0 / 19%);
     }
-    /* .video-section {
-        position: absolute;
-    }
-     */
     
     .video-content {
         display: flex;
@@ -236,7 +232,7 @@
     .video-describe p {
         padding: 0rem .7rem;
     }
-    /* video code */
+    /* video code js  */
     
     .video-js {
         width: 700px;
@@ -344,10 +340,6 @@
         font-size: .9rem;
         gap: 5px;
     }
-    /* .page-video {
-        width: 800px;
-        height: 450px;
-    } */
     /* comment section  */
     
     .express-button {
@@ -416,6 +408,7 @@
         width: 2rem;
         height: 2rem;
     }
+    /* responsive view midea query  */
     
     @media screen and (min-width: 992px) {
         .Watch-mobile-bar {
@@ -423,9 +416,6 @@
             display: none;
             margin-top: -2rem;
         }
-        /* .middle-card{
-          width: 80%;
-        } */
     }
     
     @media screen and (max-width: 991px) {
@@ -441,7 +431,7 @@
             display: none;
         }
         .Watch-middle-section {
-            width: 95%;
+            width: 100%;
             margin: 0 auto;
             margin-top: 0px;
             margin-top: 2rem;
@@ -466,8 +456,6 @@
         .mobile-bar-Watch-pages {
             display: flex;
             align-items: center;
-            /* column-gap: .3rem; */
-            /* margin-top: 1rem; */
             border: 1px solid darkgray;
             padding: 5px;
             border-radius: 30px;
@@ -499,8 +487,6 @@
         .mobile-bar-Watch-pages {
             display: flex;
             align-items: center;
-            /* column-gap: .3rem; */
-            /* margin-top: 1rem; */
             border: 1px solid darkgray;
             padding: 5px;
             border-radius: 30px;
@@ -512,20 +498,6 @@
             transition: all 0.3s ease-in-out;
             font-size: .8rem;
         }
-        /* .Watch-middle-section {
-            width: 100%;
-            margin: 0 auto;
-            margin-top: 0px;
-            margin-top: 2rem;
-            margin-left: 0;
-        }
-        .middle-Watch {
-            background-color: floralwhite;
-            margin-bottom: 2rem;
-            border-radius: 6px;
-            box-shadow: 0 3px 5px 0 rgb(0 0 0 / 20%), 0 0px 4px 0 rgb(0 0 0 / 19%);
-            position: absolute;
-        } */
     }
     
     @media screen and (max-width:346px) {

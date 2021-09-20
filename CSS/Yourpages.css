@@ -120,7 +120,7 @@
         font-weight: 500;
     }
     /* middle section create pages  */
-    /* middle mobile bar  */
+    /* middle view  nav bar  */
     
     .Yourpages-mobile-bar {
         display: flex;
@@ -150,6 +150,7 @@
     .mobile-bar-Your-pages:hover strong {
         color: #fff;
     }
+    /* middle section css */
     
     .Pagesmiddle {
         margin-top: 2rem;
@@ -347,7 +348,7 @@
         width: 3rem;
         height: 3rem;
     }
-    /* pages bar */
+    /* pages middle nav bar */
     
     .pages-bar {
         margin-top: 1rem;
@@ -408,7 +409,7 @@
         background-color: #a9a9a978;
         border-radius: 3px;
     }
-    /* pages  post   */
+    /* pages create  post card  */
     
     .pages-post {
         margin-top: 1rem;
@@ -507,9 +508,7 @@
         width: 2rem;
         height: 2rem;
     }
-    /* media query  */
-    
-    @media screen and (max-width:1444px) {}
+    /*responsive mobile view  media query  */
     
     @media screen and (max-width: 1137px) {
         .Reachedpost {
@@ -667,7 +666,6 @@
             font-weight: 500;
         }
     }
-    /* middle section  */
     
     @media screen and (min-width: 992px) {
         .create-btn {
